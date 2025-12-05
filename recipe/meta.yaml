@@ -1,5 +1,6 @@
 {% set name = "h5coro" %}
 {% set version = "0.0.7" %}
+{% set python_min = "3.10" %}
 
 package:
   name: {{ name|lower }}
@@ -12,7 +13,7 @@ source:
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
-  number: 1
+  number: 2
 
 requirements:
   host:
@@ -22,6 +23,8 @@ requirements:
     - python >={{ python_min }}
     - numpy
     - boto3
+    - earthaccess
+    - requests
 
 test:
   imports:
