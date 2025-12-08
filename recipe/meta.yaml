@@ -24,9 +24,9 @@ requirements:
     - python >={{ python_min }},<={{ python_max }}
     - numpy
     - boto3
-    - earthaccess>=0.5.0
+    - earthaccess >=0.5.0
     - requests
-    - xarray==2025.6.1
+    - xarray ==2025.6.1
 
 test:
   imports:
