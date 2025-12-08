@@ -1,5 +1,5 @@
 {% set name = "h5coro" %}
-{% set version = "0.0.7" %}
+{% set version = "1.0.3" %}
 {% set python_min = "3.10" %}
 
 package:
@@ -8,12 +8,12 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/h5coro-{{ version }}.tar.gz
-  sha256: fea0e816b768f6a69d7322df0512ea9def91ff8611fec25b469fa8450270ba9c
+  sha256: 8861f317153d220e108e0d26a5164b4d940a26d34b6b645804019a5c8de0d9c0
 
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
-  number: 2
+  number: 0
 
 requirements:
   host:
